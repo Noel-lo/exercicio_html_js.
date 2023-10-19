@@ -4,22 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Formulário</title>
-    <script>
-        function validarFormulario() {
-            var campoA = parseFloat(document.getElementById('campoA').value);
-            var campoB = parseFloat(document.getElementById('campoB').value);
-
-            if (campoB > campoA) {
-                document.getElementById('mensagem').innerHTML = 'Formulário válido!';
-                document.getElementById('mensagem').style.color = 'green';
-            } else {
-                document.getElementById('mensagem').innerHTML = 'Campo B deve ser maior que Campo A!';
-                document.getElementById('mensagem').style.color = 'red';
-            }
-
-            return false; // Evita o envio real do formulário
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <form onsubmit="return validarFormulario()">
@@ -33,5 +18,6 @@
     </form>
 
     <div id="mensagem"></div>
+    <script src="./java.js"></script>
 </body>
 </html>
